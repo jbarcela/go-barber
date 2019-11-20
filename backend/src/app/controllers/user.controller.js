@@ -15,7 +15,10 @@ class UserController {
     const { id, name, email, is_provider } = await User.create(req.body);
 
     return res.json({
-      id, name, email, is_provider
+      id,
+      name,
+      email,
+      is_provider,
     });
   }
 }
